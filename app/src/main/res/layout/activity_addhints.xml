@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Doctor.Addhints">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Hints"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"
+            android:textSize="25sp"
+            />
+
+
+        <ImageView
+            android:id="@+id/imgeadd"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/imageadd"/>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColorHint="@color/purple_200"
+            app:boxStrokeColor="@color/purple_200"
+            app:counterOverflowTextColor="@color/black"
+            app:hintTextColor="@color/purple_200"
+            android:hint="Enter hint name"
+            >
+
+
+
+            <EditText
+                android:id="@+id/etname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+
+            android:textColorHint="@color/purple_200"
+            app:boxStrokeColor="@color/purple_200"
+            app:counterOverflowTextColor="@color/black"
+            app:hintTextColor="@color/purple_200"
+            android:hint="Enter hint Description"
+            >
+
+
+            <EditText
+                android:id="@+id/etdes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <Button
+            android:id="@+id/btnaddhin"
+            style="@style/Button"
+            android:text="Add"
+            android:backgroundTint="@color/purple_500"
+            android:textSize="20sp"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

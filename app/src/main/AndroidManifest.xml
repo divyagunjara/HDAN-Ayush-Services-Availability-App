@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:allowClearUserData="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/log"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/log"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HDANAyushServicesAvailabilityApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".User.hintusers"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.Adminfeedbacks"
+            android:exported="false" />
+        <activity
+            android:name=".User.viewfeedbacks"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor.ViewAppointments"
+            android:exported="false" />
+        <activity
+            android:name=".User.History"
+            android:exported="false" />
+        <activity
+            android:name=".User.Addappointment"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA7upgCWBMQFROMDW1O4C2hIeVEBGV0i4g" />
+
+        <activity
+            android:name=".User.viewlocation"
+            android:exported="false"
+            android:label="@string/title_activity_viewlocation" />
+        <activity
+            android:name=".User.Ayurvedahintuser"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor.Addhints"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor.Ayurvedahints"
+            android:exported="false" />
+        <activity
+            android:name=".User.Useryoga"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminYoga"
+            android:exported="false" />
+        <activity
+            android:name=".User.Userprofile"
+            android:exported="false" />
+        <activity
+            android:name=".User.ViewDoctors"
+            android:exported="false" />
+        <activity
+            android:name=".User.Ayurvedarecom"
+            android:exported="false" />
+        <activity
+            android:name=".Userdashboard"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.Adminusers"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.Admindoctor"
+            android:exported="false" />
+        <activity
+            android:name=".AdminDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

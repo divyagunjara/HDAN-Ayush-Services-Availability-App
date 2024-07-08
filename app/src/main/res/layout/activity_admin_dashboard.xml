@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
+    tools:context=".AdminDashboard">
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/log"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Admin"
+        android:textStyle="italic"
+        android:textColor="#090909"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        />
+
+
+    <Button
+        android:id="@+id/btnyoga"
+        style="@style/Button"
+        android:text="Yoga masters"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/purple_500"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        />
+    <Button
+        android:id="@+id/btnadddoctor"
+        style="@style/Button"
+        android:text="Doctor"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:backgroundTint="@color/purple_700"
+        />
+
+
+    <Button
+        android:id="@+id/btnviewuser"
+        style="@style/Button"
+        android:text="user"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:backgroundTint="@color/purple_500"
+
+        />
+
+    <Button
+        android:id="@+id/btnviewfeedback"
+        style="@style/Button"
+        android:text="Feedbacks"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:backgroundTint="@color/purple_700"
+        />
+
+    <Button
+        android:id="@+id/btnlogout"
+        style="@style/Button"
+        android:text="Logout"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/purple_500"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        />
+
+
+</LinearLayout>
